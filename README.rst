@@ -1,40 +1,75 @@
-AlertOps Expert Guidance
+Best Practices for Managing On-Call Rotation (in 2021)
 ========
+Alerting has come a long way from the days of paging an on-call administrator in the middle of the night, to multiple on-call teams that run and manage incident response around the clock through automated on call rotation software.
 
- 
-The phrase ‘stakeholder management” assumes that stakeholders are truly informed by alerts. However, managers can only send communications out, they cannot force people to address them. To ensure your stakeholders are engaged during an incident, it is vital to set up a defined communication process. Yet, a recent Red Canary report1 found that 43% of surveyed participants lack readiness to notify the public and/or its customers in the event of a security breach. Without a clear strategy in place, communication can get lost in the chaos leaving stakeholders uninformed.
+This is because as organizations grow and scale, responding to incidents gets more complex and you often need more than one team to get involved to successfully resolve an incident.
 
-Not One Size Fits All
-=====
-Sending the same notification to all your stakeholders can cause a lot of confusion and create unwanted alert noise. Some users shouldn’t receive technical information, others require all the nitty gritty details. Every alert should be tailored based on a user’s expertise or role.
-Means of Communication
+Making sure that the right people from the right teams are always available seems straightforward enough, but can be a lot harder than it sounds.
 
-Strategize mode(s) of communication to be used when communicating with stakeholders. Understand which tools engage stakeholders the most. It is also vital to unify these channels for streamlined points of contact.
+While escalation policies are used to make sure the right person or team is alerted in the event of an incident, escalation policies alone don’t guarantee availability.
 
-Automate Processes
+Ensuring that one team is awake, “alert” and available, while the other team is off schedule, requires planning, collaboration, scheduling, and proper on-call rotation.
+
+Additionally, having a precise roadmap of on-call demand and availability requirements is critical in managing multiple on-call teams and rotating them in an effective and sustainable fashion
+
+Scheduling and on-call rotation
 ====
-Engaging stakeholders can take up a lot of time. Automate stakeholder communications to ensure efficient delivery of insightful information. Implement AlertOps so you can focus on getting ahead of incidents while knowing your alerts reach the right person, through the right channel, every time. Sending regular updates to stakeholders during an incident is vital to keep them calm. Automation addresses your stakeholders’ needs while ensuring they remain aligned with minimal manual work.
+Incident management is all about agility and speed. Unlike problem management, you actually have a live incident on your hands that typically requires a quick workaround solution.
 
-Clarity
+When you have multiple on-call teams looking after a service or multiple services, schedules are your golden compass for ensuring everyone is pointed in the right direction.
+
+Scheduling helps you manage which members of a specific team are available at a given time, which teams are overlapping each other and how the escalation policies affect the different members of the teams.
+
+On-call schedules used to be created on spreadsheets that couldn’t really account for availability. Modern on-call rotation software tools are interactive and have in-built scheduling features that make the process a lot easier.
+
+These tools also feature escalation policies that, in addition to managing the hierarchy of an escalation, also let you define rules on how alerts work and behave.
+
+While scheduling multiple escalations is essential when you need to get multiple teams engaged at the same time during an outage, on-call rotations are essential to making sure everyone gets enough sleep.
+
+It’s not just about planning for an outage, but also about making sure everyone shares the workload evenly, especially on weeknights, weekends and holidays.
+
+In fact, good on-call scheduling tools let you customize a number of things like preferred contact methods based on predefined schedules, rotation frequencies and time of day restrictions.
+
+Additional features include the ability to build complex schedules where users can even trade-off or swap schedules for a certain amount of hours each day.
+
+What all this automation and “time-saving” actually boils down to is the reduction of steps involved in alerting the right person, when every second counts.
+
+Collaboration and integration with monitoring app
 ====
-A highly flexible incident management and alert automation tool, AlertOps is powered by an open API, with the ability to connect with practically any communication tool. Once plugged in, AlertOps delivers alerts with relevant incident information so that stakeholders can stay in the loop from detection to resolution.
-Any Way You Want It…
 
-Since you use multiple channels for communication, you need an alerting system that sends alerts through multiple communication channels. AlertOps delivers alerts any way you want. Receive alerts by phone, SMS, or email. Even integrate with all your favorite chat tools, such as Slack and Microsoft Teams, so that users receive alerts where they are most likely to see them.
+Modern enterprise organizations often have huge teams that are geographically distributed across the globe.
 
-Insightful Notifications
+In addition to scheduling these teams so they complement and don’t clash with each other, collaboration is key to making sure teams have the right tools and information available to deal with any incidents.
+
+What if critical logs and information are available to a team that’s off duty, but not to the team that’s on call? Incident management isn’t just about getting the right people involved, but also about equipping them with the right information and the ability to communicate freely with other members in real time.
+
+This is where integrations with collaboration software like Slack and Microsoft Teams enable constant collaboration between teams.
+
+This includes the ability to reply to alerts in real time, message or question other team members in real time and add additional teams or members to an ongoing alert.
+
+Integration obviously isn’t just about integrating with collaboration or chat tools; it also involves integration with monitoring systems like ServiceNow, logging tools like Sumo Logic, and other event monitoring tools. AlertOps is an example of one incident management platform that works well with others and seamlessly integrates with chat, collaboration, and monitoring tools.
+
+This is because it features pre-built integrations and open, no-code APIs which allow you to connect and configure integrations with a number of different monitoring, communications and performance enhancing tools.
+
+The Open API also lets you connect to any system by email, webhooks or APIs. In this way, one common platform can be used to seamlessly manage and optimize all alerts from various monitoring systems, while simultaneously managing communication and collaboration.
+
+This greatly reduces the chances of burnout and fatigue among engineers as well as reduces Mean Time To Resolution (MTTR).
+
+Mature routing process for alerts
 ====
-Alerts are only useful if they contain information relevant to the user. With AlertOps, customized messages make it easy for stakeholders to quickly understand an incident. They can also receive updates throughout the course of handling the incident. Make sure emails are actionable as well. Send emails in rich text and HTML to include graphs, images, custom links, runbook links or links to a conference bridge for any alert. The solution even offers voice messages with incident details from the embedded phone system.
+In conclusion, while alerting may seem like a rather small cog in the giant DevOps wheel, without alerts we would probably have to stare at graphs all day to make sure nothing goes wrong.
 
-Conclusion
-====
-Effective incident response requires, not only sending the right information to the right people, but also ensuring those stakeholders are engaged and truly informed. It is vital to have a plan in place for ensuring that each type of stakeholder receives only the information he or she needs. AlertOps ensures that your alerts reach the right person, through the right channel, every time.
+Unlike in the past where monolithic applications didn’t really require complex on-call team structures, all of today’s services are usually pieces of a larger puzzle that fit together to form a large, interconnected platform.
 
-1 Red Canary 2021 Threat Detection Report
+Additionally, this platform, more often than not, is dependent on a complex system of resources that can include everything from public clouds to database management services and complex networking layers.
+
+The good news here is that there is more than sufficient scope to implement rule-based or policy-based routing of alerts to a point where absolutely no time is wasted between an incident occurring and the right people being informed.
+
+In today’s dynamic software market, where an organization’s on-call incident management abilities are considered the key aspect of quality and dependability, choosing the right incident management platform can be a critical decision.
 
 source:
 ====
-https://alertops.com/red-canary-says-43-lack-readiness-to-notify-customers-of-a-security-breach/
+https://alertops.com/on-call-rotation/
 
 Read more:
 ====
